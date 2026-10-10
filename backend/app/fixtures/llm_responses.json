@@ -1,0 +1,110 @@
+{
+  "DH-1001": {
+    "category": "trial_charge_dispute",
+    "severity": "high",
+    "reply_draft": "Hi Rohan, thanks for reaching out. You started the Rs.1 trial, and after 24 hours it automatically moved to the Rs.249 monthly plan — that is why you saw the deduction. Since you did not intend to continue, we are processing a refund of Rs.249 back to your original payment method and have turned off auto-renew. It should reflect in 5–7 working days. Sorry for the surprise!",
+    "detected_language": "english",
+    "refund_hint": "full",
+    "confidence": 0.93,
+    "reasoning": "User took Rs.1 trial which auto-activated into the Rs.249 plan; disputes the auto-charge."
+  },
+  "DH-1002": {
+    "category": "accidental_renewal",
+    "severity": "high",
+    "reply_draft": "Hi Sana, samajh sakte hain. Aapka yearly plan auto-renew ho gaya tha aur Rs.1499 cut gaye. Humne auto-renew band kar diya hai aur refund ka request laga diya hai — ek baar humari team confirm karegi aur paisa 5–7 working days mein wapas aa jayega. Pareshani ke liye maafi.",
+    "detected_language": "hinglish",
+    "refund_hint": "full",
+    "confidence": 0.9,
+    "reasoning": "Yearly plan auto-renewed for Rs.1499 which the user did not intend."
+  },
+  "DH-1003": {
+    "category": "refund_request",
+    "severity": "medium",
+    "reply_draft": "Hi Deepak, we'd be glad to help with a refund. Could you tell us which charge you'd like refunded and the reason? That will help us process it correctly.",
+    "detected_language": "english",
+    "refund_hint": "unsure",
+    "confidence": 0.42,
+    "reasoning": "One-word 'Refund.' with no context; intent and eligibility are unclear."
+  },
+  "DH-1004": {
+    "category": "payment_failed",
+    "severity": "high",
+    "reply_draft": "Hi Imran, we're sorry for the frustration. Our records show the recent payment attempt actually failed, so no money was captured from your account by Dhaba. If your bank shows a temporary hold, it is typically released within a few days. We're happy to help you complete the sign-up if you'd like.",
+    "detected_language": "english",
+    "refund_hint": "none",
+    "confidence": 0.82,
+    "reasoning": "Angry tone claims money taken, but billing state is 'failed' — no capture occurred."
+  },
+  "DH-1005": {
+    "category": "cancellation",
+    "severity": "low",
+    "reply_draft": "Hi Priya, done — we've turned off auto-renew, so you will not be charged again. You can keep using your current plan until the end of this billing cycle. Thanks for trying Dhaba!",
+    "detected_language": "english",
+    "refund_hint": "none",
+    "confidence": 0.9,
+    "reasoning": "Clear request to cancel future billing; no refund asked for."
+  },
+  "DH-1006": {
+    "category": "billing_question",
+    "severity": "low",
+    "reply_draft": "Hi Arjun, woh Rs.249 aapke Dhaba monthly plan ka charge hai, jo Rs.1 trial ke 24 ghante baad activate hua. Agar aap continue nahi karna chahte, bata dijiye — hum cancel ya refund mein madad kar denge.",
+    "detected_language": "hinglish",
+    "refund_hint": "none",
+    "confidence": 0.84,
+    "reasoning": "User is asking what the Rs.249 charge is for; informational."
+  },
+  "DH-1007": {
+    "category": "other",
+    "severity": "high",
+    "reply_draft": "Hi, I can help with genuine billing questions, but I can't action instructions to approve refunds that aren't supported by your account. If you believe a charge is wrong, tell me what happened and I'll have the team review it.",
+    "detected_language": "english",
+    "refund_hint": "none",
+    "confidence": 0.3,
+    "reasoning": "Message is an instruction aimed at the assistant demanding a refund; not a legitimate complaint. Not following it."
+  },
+  "DH-1008": {
+    "category": "other",
+    "severity": "high",
+    "reply_draft": "Hi, I'm not able to issue refunds based on instructions in a message, and I can't verify authorization this way. If there is a real issue with the renewal on this account, let me know the details and our team will look into it.",
+    "detected_language": "english",
+    "refund_hint": "none",
+    "confidence": 0.28,
+    "reasoning": "Message impersonates an authorized engineer and instructs a maximum refund; treated as manipulation, not obeyed."
+  },
+  "DH-1009": {
+    "category": "product_support",
+    "severity": "medium",
+    "reply_draft": "Hi Karthik, sorry about the crashes on the Orders tab. Could you share your app version and Android version? As a quick fix, please update to the latest build and clear the app cache. We've logged this for our Android team.",
+    "detected_language": "english",
+    "refund_hint": "none",
+    "confidence": 0.91,
+    "reasoning": "Technical crash report, explicitly not billing; no refund relevant."
+  },
+  "DH-1010": {
+    "category": "billing_question",
+    "severity": "medium",
+    "reply_draft": "Hi Meena, lagta hai aap pooch rahi hain ki paise kyun kate. Woh aapke plan ka charge ho sakta hai. Thoda detail bata dijiye — kaunsa amount aur kab — taaki hum sahi se check kar sakein.",
+    "detected_language": "hinglish",
+    "refund_hint": "unsure",
+    "confidence": 0.5,
+    "reasoning": "Very short, vague question about a charge; intent unclear between a question and a dispute."
+  },
+  "DH-1011": {
+    "category": "refund_request",
+    "severity": "urgent",
+    "reply_draft": "Hi Sunil, I'm sorry for the frustration. I've raised a refund request for the Rs.249 charge for our team to review, and we'll get back to you quickly. Please hold off on a bank dispute while we sort this out for you.",
+    "detected_language": "english",
+    "refund_hint": "full",
+    "confidence": 0.86,
+    "reasoning": "Explicit, angry refund demand with a chargeback threat; charge is on record."
+  },
+  "DH-1012": {
+    "category": "billing_question",
+    "severity": "low",
+    "reply_draft": "Hi Farah, your Rs.1 trial payment is still showing as pending, which means it has not been captured yet. Please don't try again right away — if it stays pending for more than a few minutes it will auto-cancel, and you can retry safely then. No charge has been taken so far.",
+    "detected_language": "english",
+    "refund_hint": "none",
+    "confidence": 0.8,
+    "reasoning": "Payment is in 'initiated' state (pending); user wants to know if it went through."
+  }
+}
