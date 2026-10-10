@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local config & secrets
+.env
+
+# SQLite databases (created at runtime)
+*.db
+*.db-wal
+*.db-shm
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Confidential assignment brief — do not publish (per the PDF's own notice)
+*.pdf

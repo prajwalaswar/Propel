@@ -1,0 +1,14 @@
+# Core service (required for replay mode — no API key needed)
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+structlog==24.4.0
+
+# Test + dev
+pytest==8.3.4
+httpx==0.28.1
+
+# Live LLM providers (only needed when LLM_MODE=live; imported lazily)
+google-genai==0.3.0
+groq==0.13.1
